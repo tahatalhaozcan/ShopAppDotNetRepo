@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 
 namespace shopapp.webui
@@ -24,19 +26,13 @@ namespace shopapp.webui
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseStaticFiles(); // wwwroot içindeki dosyaları kullanabilmemiz için gerekli
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
              
             app.UseRouting();
-
-            // localhost:5000
-            // localhost:5000/home
-            // localhost:5000/home/index
-            // localhost:5000/product/details/2
-            // localhost:5000/product/list/2
-            // localhost:5000/category/list
 
             app.UseEndpoints(endpoints =>
             {
