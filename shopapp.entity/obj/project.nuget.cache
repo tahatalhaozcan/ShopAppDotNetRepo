@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "smnFwHF8uj/LTIs0895gQwE2U5spggaWd6W+b5dtQwTs9RC3JxHw4rt5TAI1LZTG0E7GS0FJpw/WbLrBi7Duuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tahat\\OneDrive\\Masaüstü\\ShopApp\\shopapp.entity\\shopapp.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tahat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tahat\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

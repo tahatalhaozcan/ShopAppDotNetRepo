@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using shopapp.webui.Models;
+using shopapp.entity;
 
-public class ProductViewModel
+public class ProductListViewModel
 {
         public List<Product> Products { get; set; }
 }
